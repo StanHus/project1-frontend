@@ -10,7 +10,7 @@ const ListInputs = () => {
 
   const getinputs = async () => {
     try {
-      const response = await fetch("http://cryptic-plains-98206.herokuapp.com/list");
+      const response = await fetch("https://cryptic-plains-98206.herokuapp.com/list");
       const jsonData = await response.json();
       setInputs(jsonData);
     } catch (err) {
