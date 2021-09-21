@@ -7,7 +7,7 @@ function InputText (): JSX.Element {
     e.preventDefault();
     try {
       const body = { text };
-      const response = await fetch("http://cryptic-plains-98206.herokuapp.com/list", {
+       await fetch("http://cryptic-plains-98206.herokuapp.com/list", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
